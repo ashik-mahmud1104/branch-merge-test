@@ -1,12 +1,12 @@
-def fib(n):
+def factorial(n):
     if n == 0:
-        return 0
+        return 1                
     elif n == 1:
         return 1
     else:
-        return fib(n - 1) + fib(n - 2)
+        return n * factorial(n - 1)
 def main():
-    print(fib(10))          
+    print(factorial(10))
 
 if __name__ == "__main__":
     main()
