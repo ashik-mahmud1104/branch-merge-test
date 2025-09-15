@@ -5,8 +5,13 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n - 1)
+    
+def print_string():
+    return "I am Eusha. This line is mine."
+
 def main():
     print(factorial(10))
+    print(print_string())
 
 if __name__ == "__main__":
     main()
