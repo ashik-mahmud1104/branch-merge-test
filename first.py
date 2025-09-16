@@ -5,6 +5,9 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n - 1)
+
+def palindrome(s):
+    return s == s[::-1]
     
 def gcd(a, b):
     while b:
@@ -29,7 +32,9 @@ def main():
     print(print_string())
     print(print_series(10))
     print(my_friends())
-    print(gcd(48, 18))
+    print(gcd(48, 18))  
+    print(palindrome("radar"))
+    print(palindrome("hello"))
 
 if __name__ == "__main__":
     main()
