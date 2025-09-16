@@ -6,6 +6,11 @@ def factorial(n):
     else:
         return n * factorial(n - 1)
     
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+    
 def print_string():
     return "conflict test"
 
@@ -24,6 +29,7 @@ def main():
     print(print_string())
     print(print_series(10))
     print(my_friends())
+    print(gcd(48, 18))
 
 if __name__ == "__main__":
     main()
