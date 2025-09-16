@@ -15,10 +15,15 @@ def print_series(n):
         series.append(i * (i + 1) // 2)
     return series
 
+def my_friends():
+    friends = ["Imon", "Kakon", "Rabbi", "Rifat"]
+    return friends
+
 def main():
     print(factorial(10))
     print(print_string())
     print(print_series(10))
+    print(my_friends())
 
 if __name__ == "__main__":
     main()
